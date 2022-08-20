@@ -1,0 +1,57 @@
+/* Let's create an animated underline using CSS */
+/* Youtube Link: https://youtu.be/4rrHtx6-r8Y */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container p {
+    width: 60%;
+    height: 200px;
+    border: 1px solid black;
+    padding: 30px 50px;
+}
+
+.animated-line {
+    color: #ff0468;
+    margin: 10px 30px;
+    font-size: 2rem;
+    background-image: linear-gradient(90deg, #62aeff, #ff0468, #af4ffe);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 700ms ease-in-out; 
+}
+
+.animated-line:hover {
+    background-size: 100% 2px;
+}
+
+h1.animated-line {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
